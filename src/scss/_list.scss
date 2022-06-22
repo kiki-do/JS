@@ -1,0 +1,155 @@
+section{
+    position: relative;
+}
+
+
+
+.list{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    width: 1160px;
+    height: 280px;
+    top: -69px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1 );
+    border-radius: 10px;
+    right: 360px;
+    @media (max-width: $breakpoint1550) {
+       right: 100px;
+       transform: scale(.85, .85);
+    }
+    @media (max-width: $breakpoint1180) {
+        right: 0px;
+        transform: scale(.65, .65);
+        top: -100px;
+     }
+     
+     @media (max-width: $breakpoint1180) {
+        right: 0px;
+        transform: scale(.65, .65);
+        top: -100px;
+     }
+
+     @media (max-width: $breakpoint1180) {
+        right: -140px;
+        transform: scale(.55, .55);
+        top: -100px;
+     }
+
+     @media (max-width: $breakpoint769) {
+        right: -220px;
+        transform: scale(.4, .4);
+        top: -100px; 
+     }
+
+     @media (max-width: $breakpoint540) {
+        right: -370px;
+        transform: scale(.3, .3);
+        top: -50px; 
+     }
+    
+
+
+
+    
+    &__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 1115px;
+        height: 243px;
+        left: 76px;
+        top: 41px;
+        margin-left: 90px;
+    }
+
+    &__title{
+        position: relative;
+        left: 100px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        color: #252525;
+        &-1{
+            position: relative;
+            left: -93.5px;
+            top: -28px;
+        }
+
+        &-2{
+            position: relative;
+            left: 23.5px;
+            top: -65px;
+        }
+
+        &-3{
+            position: relative;
+            left: 10px;
+            top: -64px;
+        }
+
+    }
+
+    &__subtitle{
+        font-family: Poppins;
+        font-size: 21px;
+        line-height: 36px;
+        text-align: center;
+        color: #9D9D9D;
+        position: relative;
+
+        &-1{
+            left: -150px;
+            top: -25px;
+            max-width: 310px;
+        }
+
+        &-2{
+            left: -167px;
+            top: 50px;
+            max-width: 240px;
+        }
+
+        &-3{
+            left: -195px;
+            top: 50px;
+            max-width: 220px;
+        }
+        
+       
+    }
+}
+
+.pictures{
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    background-color: #f2fafa;
+    background-position: 20px;
+    padding: 20px;
+
+    &__lock{
+        top: -43px;
+        left: -53px;
+
+    }
+
+    &__doc{
+        top: -80px;
+        left: 50px;
+    }
+
+    &__secure{
+        top: -80px;
+        left: 50px;
+    }
+
+}

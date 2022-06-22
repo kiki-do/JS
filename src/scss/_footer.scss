@@ -1,0 +1,167 @@
+// Footer
+footer {
+    display: block;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logotype{
+    @media (max-width: $breakpoint769) {
+        transform: scale(.8,.8);
+        position: relative;
+        top: -20px;
+        left: -20px;
+
+
+    }
+}
+
+.footer {
+    &__content{
+        padding-top: 140px;
+        &-text{
+            font-family: Poppins;
+            font-size: 14px;
+            max-width: 250px;
+            line-height: 27px;
+            color: #252525;
+            margin-bottom: 25px;
+        }
+        @media (max-width: $breakpoint769) {
+            transform: scale(.7,.7);
+            position: relative;
+            top: -100px;
+            max-width: 500px;
+        }
+    }
+
+    &__item{
+        margin-left: 440px;
+        position: relative;
+        bottom: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: $breakpoint769) {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            left: -200px;
+
+        }
+        h1{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 36px;
+            margin-bottom: 20px;
+            color: #252525;
+            &:hover{
+                cursor: pointer;
+                font-size: 24px;
+                transition: .6s all ease;
+            }
+        }
+
+        a{
+            display: flex;
+            flex-direction: column;
+            font-family: Poppins;
+            font-size: 14px;
+            line-height: 27px;
+            color: #252525;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                color: #1E88E5;
+                transition: .6s all ease;
+            }
+        }
+        @media (max-width: $breakpoint992) {
+            transform: scale(.8,.8);
+            position: relative;
+            bottom: 190px;
+            margin-left: 250px;
+
+        }
+        &-link{
+            @media (max-width: $breakpoint769) {
+                margin-top: 20px;;
+            }
+        }
+    }
+} 
+
+.icons {
+    display: flex;
+    gap: 30px;
+    path{
+        &:hover{
+            cursor: pointer;
+            fill: #1E88E5;
+            
+            transition: .6s all ease;
+        }
+    }
+}
+
+
+.one__of{
+        position: relative;
+        top: 0px;
+        left: 30px;
+        path{
+            &:hover{
+                cursor: pointer;
+                fill: #1E88E5;
+                stroke: #1E88E5;
+                
+                transition: .6s all ease;
+            }
+        }
+        
+    }
+.svg{
+    position: absolute;
+    left: -40px;
+}
+
+
+
+
+.gps {
+  position: relative;
+
+    
+    
+
+}
+
+.number {
+    position: relative;
+    top: 25px;
+}
+
+.mail {
+    position: relative;
+    top: 50px;
+}
+
+
+.end{
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 27px;
+    color: #9D9D9D;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $breakpoint769) {
+        position: relative;
+        bottom: 150px;
+
+
+    }
+}

@@ -1,0 +1,126 @@
+.subscription {
+    height: 561px;
+    background-color: #F2FAFA;
+    @media (max-width: $breakpoint1180) {
+        margin-top: 100px;
+     }
+
+     @media (max-width: $breakpoint620) {
+        margin-top: 1400px;
+     }
+    &__content {
+
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        &-title{
+            text-align: center;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 84px;
+            color: #252525;
+            &:hover{
+                font-size: 56px;
+                transition: .6s all ease;
+             }
+            @media (max-width: $breakpoint992) {
+                font-size: 46px;
+             }
+             @media (max-width: $breakpoint769) {
+                max-width: 400px;
+             }
+        }
+        &-subtitle{
+            text-align: center;
+            font-family: Poppins;
+            font-size: 20px;
+            line-height: 36px;
+            color: #9D9D9D;
+            @media (max-width: $breakpoint992) {
+                font-size: 16px;
+             }
+             @media (max-width: $breakpoint769) {
+                max-width: 400px;
+             }
+             &:hover{
+                font-size: 24px;
+                transition: .6s all ease;
+             }
+        }
+    }
+}
+
+.email {
+    padding: 15px 162px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 36px;
+    color: #9D9D9D;
+    margin-top: 90px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 370px;
+
+    &:focus{
+        outline: none;
+        border: 2px solid ;
+        box-shadow: 12px 12px 2px 1px #1E88E5;
+        opacity: .6;
+        transition: .8s all ease;
+    }
+
+    @media (max-width: $breakpoint992) {
+        position: relative;
+        left: 300px;
+        width: 320px;
+        height: 70px;
+     }
+
+     @media (max-width: $breakpoint769) {
+        position: static;
+        margin-left: 40px;
+     }
+}
+.btn {
+    margin-top: 62px;
+    background: #1E88E5;
+    border-radius: 10px;
+    padding: 15px 79px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    position: relative;
+    left: 530px;
+    color: #FFFFFF;
+    &:hover{
+        background: #0472d1;
+        box-shadow: 5px 5px 8px rgba(0,0,0,.6);
+        transition: .6s all ease;
+    }
+
+    &:active{
+        position: relative;
+        top: 4px;
+        left: 534px;
+        transition: .8s all ease;
+        box-shadow: none;
+
+    }
+    @media (max-width: $breakpoint992) {
+        position: relative;
+        left: 330px;
+
+     }
+     @media (max-width: $breakpoint769) {
+        position: static;
+        margin-left: 40px;
+
+     }
+}

@@ -1,0 +1,176 @@
+.category {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 700px;
+    position: relative;
+    &__content{
+        display: flex;
+        &-title{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 84px;
+            color: #252525;
+            text-align: center;
+            margin-left: 300px;
+            span{
+                color: #1E88E5;
+            }
+            &:hover{
+                font-size: 56px;
+                cursor: pointer;
+                transition: .6s all ease;
+            }
+            @media (max-width: $breakpoint769) {
+                position: relative;
+                right: 250px;
+                font-size: 46px;
+                margin-top: 100px;
+            }
+        }
+    }
+    &__item{
+        margin-top: 150px;
+        display: grid;
+        grid-template-rows: 250px ;
+        grid-template-columns: 250px;
+        position: absolute;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+        
+        @media (max-width: $breakpoint1350) {
+            transform: scale(.7,.7);
+        }
+
+        @media (max-width: $breakpoint1180) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &-link{
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,.3);
+                z-index: 2;
+                border-radius: 20px;
+                height: 241px;
+            }
+            position: relative;
+            z-index: 3;
+            @media (max-width: $breakpoint1180) {
+                display: flex;
+                flex-wrap: wrap;
+                flex: 0 0 25%;
+            }
+            &:hover{
+                position: relative;
+                cursor: pointer;
+                transform: scale(1.4,1.4);
+                z-index: 5;
+                transition: .6s all ease;   
+
+       }
+    }
+    }
+    &__text{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        position: relative;
+        bottom: 130px;
+        text-align: center;
+        z-index: 4;
+    }
+}
+
+
+.category__content {
+}
+
+
+
+.category__item {
+}
+
+.category__item-link {
+}
+
+.category__text {
+}
+
+.category__btn {
+    position: absolute;
+    bottom: -50px;
+    left: 520px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #1E88E5;
+    border-radius: 10px;
+    width: 242px;
+    height: 76px;
+    &:hover{
+        background: #0472d1;
+        box-shadow: 5px 5px 8px rgba(0,0,0,.6);
+        transition: .6s all ease;  
+    }
+    &:active{
+        position: absolute;
+        transition: .3s all ease;
+        box-shadow: none;
+        bottom: -54px;
+        left: 523px;
+        @media (max-width: $breakpoint992) {
+            bottom: -450px;
+            left: 350px;
+        }
+    
+        @media (max-width: $breakpoint769) {
+            bottom: -390px;
+            left: 260px;
+        }
+    
+        @media (max-width: $breakpoint620) {
+            bottom: -1400px;
+            left: 185px;        
+        }
+    }
+
+    @media (max-width: $breakpoint1180) {
+        position: absolute;
+        bottom: -250px;
+        left: 450px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        position: absolute;
+        bottom: -450px;
+        left: 350px;
+    }
+
+    @media (max-width: $breakpoint769) {
+        transform: scale(.7,.7);
+        position: absolute;
+        bottom: -390px;
+        left: 260px;
+    }
+
+    @media (max-width: $breakpoint620) {
+        position: absolute;
+        bottom: -1400px;
+        left: 185px;
+        transform: scale(.7,.7);
+    }
+
+}

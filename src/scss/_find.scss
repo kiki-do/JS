@@ -1,0 +1,242 @@
+.find {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    max-height:min-content;
+    &__girl{
+        position: absolute;
+        padding-left: 100px;
+        width: 616px;
+        height: 587px;
+        @media (max-width: $breakpoint1180) {
+            transform: scale(.7,.7);
+        }
+
+        @media (max-width: $breakpoint769) {
+            transform: scale(.65,.65);
+            top: 50px;
+            left: -100px;
+        }
+
+        @media (max-width: $breakpoint540) {
+            transform: scale(.45,.45);
+            left: -200px;
+            
+        }
+    }
+
+    &__cloud{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 54px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        color: #9D9D9D;
+        margin-left: 20px;
+        .menu__subtitle:hover{
+            font-size: 24px;
+            cursor: pointer;
+            transition: .6s all ease;
+        }
+        @media (max-width: $breakpoint1180) {
+            font-size: 19px;
+            margin-left: 40px;
+            transform: scale(.7,.7);
+
+            @media (max-width: $breakpoint769) {
+                transform: scale(.55,.55);
+                
+            }
+
+            @media (max-width: $breakpoint540) {
+                transform: scale(.45,.45);
+            }
+        }
+        &-text{
+            position: relative;
+            display: flex;
+            bottom: 20px;
+            left: 30px;
+            @media (max-width: $breakpoint1180) {
+                left: 25px;
+                transform: scale(.7,.7);
+            }
+
+            
+            
+        }
+        &-span{
+            padding-top: 30px;
+            font-size: 35px;
+            font-weight: 600;
+            color: #1E88E5;
+            max-width:  0px;
+            display: flex;
+            @media (max-width: $breakpoint1180) {
+                font-size: 25px;
+                margin-left: 10px;
+            }
+
+            @media (max-width: $breakpoint769) {
+                font-size: 25px;
+                margin-left: 10px;
+                
+            }
+            &.second{
+                position: relative;
+                left: 103px;
+                bottom: 15px;
+            
+            }
+            
+            &.first{
+                position: relative;
+                left: 43px;
+                bottom: 15px;
+            }
+        }
+
+        
+        &-1{
+            position: absolute;
+            width: 162px;
+            height: 120px;
+            left: 448px;
+            top: 400px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 20px; 
+            padding-right: 20px;
+            @media (max-width: $breakpoint1180) {
+                top: 160px;
+            }
+
+            @media (max-width: $breakpoint769) {
+                top: -300px;
+                left: 350px;
+                
+            }
+
+            @media (max-width: $breakpoint540) {
+                left: 200px;
+                
+            }
+
+            
+        }
+        &-2{
+            position: absolute;
+            width: 297px;
+            height: 132px;
+            left: 449px;
+            top: 588px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            align-items: flex-end;  
+            text-align: end;
+            @media (max-width: $breakpoint1180) {
+                top: 340px; 
+            }
+
+            @media (max-width: $breakpoint769) {
+                top: -120px;
+                left: 400px;
+                
+            }
+
+            @media (max-width: $breakpoint540) {
+                left: 250px;
+                top: -150px;
+                
+            }
+        }
+    }
+}
+
+.find__content {
+    padding-top: 365px;
+}
+
+.text{
+
+    &__title{
+        font-family: Poppins;
+        position: absolute;
+        bottom: -200px;
+        left: 780px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 84px;
+        text-align: right;  
+        color: #252525;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        max-width: 500px;
+        @media (max-width: $breakpoint1180) {
+            font-size: 40px;
+            left: 500px;
+            max-width: 1000px;
+            width: 40%;
+        }
+
+        @media (max-width: $breakpoint769) {
+            font-size: 30px;
+            left: 350px;
+            top: 160px;
+        }
+
+        @media (max-width: $breakpoint540) {
+            width: fit-content;
+            position: static;
+            margin-top: 500px;
+            text-align: left;
+        }
+
+        &-span{
+            color: #1E88E5;
+        }
+    }
+    &__subtitle{
+        position: absolute;
+        font-family: Poppins;
+        vertical-align: text-bottom;
+        font-size: 22px;
+        line-height: 36px;
+        text-align: right;
+        color: #9D9D9D;
+        bottom: -500px;
+        left: 820px;
+        max-width: 460px;
+        top: 580px;
+        padding-bottom: 100px;
+        @media (max-width: $breakpoint1180) {
+            font-size: 16px;
+            width: 30%;
+            left: 570px;
+            padding-left: none;
+        }
+
+        @media (max-width: $breakpoint769) {
+            font-size: 14px;
+            top: 400px;
+            left: 350px;
+            width: 40%;
+            
+        }
+
+        @media (max-width: $breakpoint540) {
+            width: fit-content;
+            position: static;
+            text-align: left;
+
+        }
+    }
+}
+

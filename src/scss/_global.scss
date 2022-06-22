@@ -1,0 +1,60 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1550) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint1350) {
+        max-width: 1350px;
+    }
+
+
+    @media (max-width: $breakpoint1180) {
+        max-width: 1100px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint769) {
+        max-width: 740px;
+    }
+
+
+    @media (max-width: $breakpoint620) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint540) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
